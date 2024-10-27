@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="hangman.css">
+  <title>Hangman</title>
+</head>
+<body>
+  <div class="top">
+    <div class="back"><span><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-back"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg></span> Menu</div>
+    <p class="label">Hangman</p>
+    <div onclick="resetGame()" class="refresh"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-reload"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.933 13.041a8 8 0 1 1 -9.925 -8.788c3.899 -1 7.935 1.007 9.425 4.747" /><path d="M20 4v5h-5" /></svg></div>
+  </div>
+  <div class="game">
+    <div class="hangman"></div>
+    <div class="inputWord" type="text"></div>
+  </div>
+  <div class="keyboard">
+    <div class="keys keys-top">
+      <button class="keyboard-btn" onclick="guess('q')">q</button>
+      <button class="keyboard-btn" onclick="guess('w')">w</button>
+      <button class="keyboard-btn" onclick="guess('e')">e</button>
+      <button class="keyboard-btn" onclick="guess('r')">r</button>
+      <button class="keyboard-btn" onclick="guess('t')">t</button>
+      <button class="keyboard-btn" onclick="guess('y')">y</button>
+      <button class="keyboard-btn" onclick="guess('u')">u</button>
+      <button class="keyboard-btn" onclick="guess('i')">i</button>
+      <button class="keyboard-btn" onclick="guess('o')">o</button>
+      <button class="keyboard-btn" onclick="guess('p')">p</button>
+    </div>
+    <div class="keys keys-mid">
+      <button class="keyboard-btn" onclick="guess('a')">a</button>
+      <button class="keyboard-btn" onclick="guess('s')">s</button>
+      <button class="keyboard-btn" onclick="guess('d')">d</button>
+      <button class="keyboard-btn" onclick="guess('f')">f</button>
+      <button class="keyboard-btn" onclick="guess('g')">g</button>
+      <button class="keyboard-btn" onclick="guess('h')">h</button>
+      <button class="keyboard-btn" onclick="guess('j')">j</button>
+      <button class="keyboard-btn" onclick="guess('k')">k</button>
+      <button class="keyboard-btn" onclick="guess('l')">l</button> 
+    </div>
+    <div class="keys keys-bottom">
+      <button class="btn-none none-left"></button>
+      <button class="keyboard-btn" onclick="guess('z')">z</button>
+      <button class="keyboard-btn" onclick="guess('x')">x</button>
+      <button class="keyboard-btn" onclick="guess('c')">c</button>
+      <button class="keyboard-btn" onclick="guess('v')">v</button>
+      <button class="keyboard-btn" onclick="guess('b')">b</button>
+      <button class="keyboard-btn" onclick="guess('n')">n</button>
+      <button class="keyboard-btn" onclick="guess('m')">m</button>   
+      <button class="btn-none none-right"></button>
+    </div>
+  </div>
+  <script src="hangman.js"></script>
+</body>
+</html>
