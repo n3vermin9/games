@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StopWatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="time">
+      <div class="hours">00</div>
+      <p class="dots">:</p>
+      <div class="minutes">00</div>
+      <p class="dots">:</p>
+      <div class="seconds">00</div>
+    </div>
+    <div class="btns">
+      <div class="btn btn-start" onclick="startFunction()">Start</div>
+      <div class="btn btn-stop" onclick="stopFunction()">Stop</div>
+      <div class="btn btn-reset" onclick="resetFunction()">Reset</div>
+      <div class="btn btn-mark" onclick="markFunction()"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon stopwatch"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 13a7 7 0 1 0 14 0a7 7 0 0 0 -14 0z" /><path d="M14.5 10.5l-2.5 2.5" /><path d="M17 8l1 -1" /><path d="M14 3h-4" /></svg></div>
+    </div>
+  </div>
+  <div class="marks"></div>
+  <script src="main.js"></script>
+</body>
+</html>
