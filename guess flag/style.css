@@ -87,6 +87,13 @@ body {
   transform: scale(1.6);
 }
 
+.finish {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  display: none;
+}
+
 .container-bottom {
   display: flex;
   justify-content: center;
@@ -96,15 +103,20 @@ body {
   gap: 10px;
 }
 
-.input {
+.bottom-style {
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   background: #383838;
   border-radius: 15px;
-  font-size: 30px;
   border: none;
+  outline: none;
+  height: 100%;
+}
+
+.input {
+  font-size: 30px;
   padding: 0 20px 0 20px;
   color: white;
   outline: none;
@@ -114,14 +126,17 @@ body {
 
 .skip {
   width: 140px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  background: #383838;
   cursor: pointer;
+}
+
+.play-again {
+  cursor: pointer;
+  width: 640px;
+  font-size: 20px;
+  background: #8ACE00;
+  font-size: 36px;
+  letter-spacing: 2px;
+  display: none;
 }
 
 .icon-skip {
