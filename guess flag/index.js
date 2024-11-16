@@ -16,6 +16,7 @@ let livesCount = 3
 let scoreCount = 0
 let timeCount = 60
 
+
 let isTimeStarted = false
 
 window.onload = function(){
@@ -32,6 +33,7 @@ function timerStart() {
     timeCount--
     if (timeCount < 10) {
       time.innerText = `00:0${timeCount}`
+      time.style.color = 'red'
     } else {
       time.innerText = `00:${timeCount}`
     }
@@ -53,8 +55,17 @@ function generateFlag() {
   flag.src = flagValue[randomInt]
 }
 
+function hideMe(elem) {
+  elem.style.display = 'none'
+}
+
 function stopGame() {
-  flag.style.display = 'none'
+  hideMe(score)
+  hideMe(time)
+  hideMe(lives)
+  hideMe(flag)
+  hideMe(input)
+  hideMe(skip)
   finishText.style.display = 'block'
   if (scoreCount > localStorage.getItem('score')) {
     localStorage.setItem('score', scoreCount)
@@ -64,8 +75,6 @@ function stopGame() {
     best Score: ${localStorage.getItem('score')}
     `
   }
-  input.style.display = 'none'
-  skip.style.display = 'none'
   playAgain.style.display = 'flex'
 }
 

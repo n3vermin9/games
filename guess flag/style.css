@@ -143,3 +143,13 @@ body {
   transform: scale(1.7);
   color: white;
 }
+
+
+@media (max-width:480px)  {
+  .finish {
+    font-size: 24px;
+  }
+  .play-again {
+    font-size: 30px;
+  }
+}
